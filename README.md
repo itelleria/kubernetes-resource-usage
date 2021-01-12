@@ -1,3 +1,11 @@
+# Test
+
+Build with `mvn clean package jib:dockerBuild`. 
+
+Inspect kubernetes metrics with `kubectl top pod`. 
+
+Inspect resource usage inside the pod with `kubectl exec --stdin --tty kubernetes-resource-usage -- sh`
+
 # Results
 
 Node's CPU cores: 4
