@@ -2,6 +2,8 @@
 
 Build with `mvn clean package jib:dockerBuild`. 
 
+Deploy to k8s: `kubectl apply -f pod.yaml`
+
 Inspect kubernetes metrics with `kubectl top pod`. 
 
 Inspect resource usage inside the pod with `kubectl exec --stdin --tty kubernetes-resource-usage -- sh`
