@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: kubernetes-resource-usage
+  name: kubernetes-resource-usage
+spec:
+  containers:
+  - image: kubernetes-resource-usage:0.0.1-SNAPSHOT
+    name: kubernetes-resource-usage
+    resources:
+      requests:
+        cpu: "2"
+      limits:
+        cpu: "4"
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
